@@ -280,7 +280,7 @@ const ManageLead = () => {
                             Add New Comment
                         </div>
                         <form className="card-body addComment"  onSubmit={handleCommentSubmit}>
-                            <input type="text" name="commentText" value={commentDetails.commentText} onChange={handleComment} required/>
+                            <input type="text" name="commentText" placeholder="Type your comment here" value={commentDetails.commentText} onChange={handleComment} required/>
                             <label className="fs-5 mt-3">Agent Name :</label>
                             <select name="author" className="mx-3" value={commentDetails.author} onChange={handleComment} required>
                                 <option value="">Select Agent</option>
