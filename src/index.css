@@ -1,0 +1,902 @@
+.leadDetails{
+  display: flex;
+}
+
+.leadDetails div{
+  display: flex;
+  overflow-wrap: anywhere;
+  flex-grow: 1;
+  border: 1px solid black;
+  padding: 5px;
+  width: 33%;
+  align-items: center;
+}
+
+
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #00224B;
+}
+
+
+.pieChart {
+  width: 500px;
+  height: 500px;
+}
+
+.barChart {
+  width: 500px;
+  height: 500px;
+}
+
+h1{
+  font-family: 'Baloo 2', cursive;
+}
+
+.header{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+/* Dashboard */
+
+@media (max-width: 540px){
+  .dbLayout{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .dbLinks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+  }
+  .dbLinks div{
+    width: 40%;
+    margin: 0px 10px;
+  }
+  .leadH1{
+    text-align: center;
+  }
+  .leadH2{
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 765px){
+  .dbLayout .dbLinks div{
+    width: 100%;
+  }
+  .leadH1{
+    text-align: center;
+  }
+  .leadH2{
+    text-align: center;
+  }
+}
+
+@media(min-width: 1000px){
+  .dbLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dbLayout .dbLinks div{
+    width: 60%;
+  }
+  .leadH1{
+    margin-left: 2rem;
+    text-align: start;
+  }
+  .leadH2{
+    margin-left: 2rem;
+    text-align: start;
+  }
+}
+
+
+/* Lead List Page */
+
+@media (max-width: 545px){
+  .leadListData{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 10px;
+    align-items: center;    
+  }
+  .leadDetails div{
+    font-size: 1rem;
+  }
+  .filterOptions{
+    display: block;
+  }
+  .filterOptions select{
+    width: 42%;
+    margin: 10px;
+    padding: 3px;
+  }
+  .filterHeading{
+    font-weight: 500;
+  }
+  .sorting{
+    display: flex;
+  }
+  .sortOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sortOptions select{
+    width: 90%;
+    margin: 5px 20px;
+    padding: 3px;
+  }
+  .sortHeading{
+    font-weight: 500;
+  }
+  .dbBtn{
+    display: flex;
+    justify-content: center;
+  }
+  .dbBtn button{
+    width: 74%;
+    margin: 2rem;
+  }
+  .addLeadBtn{
+    display: flex;
+    justify-content: center;
+  }
+  .addLeadBtn button{
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 765px){
+  .leadListData{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 10px;
+    align-items: center;    
+  }
+  .filterOptions{
+    display: block;
+  }
+  
+  .filterOptions select{
+    width: 20%;
+    margin: 10px;
+    padding: 3px;
+  }
+  .filterHeading{
+    font-weight: 500;
+  }
+  .sorting{
+    display: flex;
+  }
+  .sortOptions{
+    display: flex;
+    align-items: center;
+  }
+  .sortOptions select{
+    margin: 5px 20px;
+    padding: 3px;
+  }
+  .sortHeading{
+    font-weight: 500;
+  }
+  .dbBtn button{
+    width: 46%;
+    margin: 37px;
+  }   
+  .addLeadBtn button{
+    width: 50%;
+  }
+}
+
+@media(min-width: 1000px){
+  .leadListData{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: start;
+  }
+  .dbBtn{
+    display: flex;
+    margin-top: 2rem;
+  }
+  .dbBtn button{
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 2rem;
+  }  
+  .filterOptions select{
+    width: 40%;
+    margin: 10px;
+    padding: 3px;
+  }  
+  .sorting{
+    display: block;
+  }
+}
+
+@media(min-width: 1050px){
+  .dbBtn button{
+    width: 60%;
+    margin-left: 0rem;
+    margin-right: 2rem;
+  } 
+  .addLeadBtn button{
+    width: 25%;
+  }
+}
+
+
+/* Add New Lead */
+
+@media (min-width: 340px){
+  .lb {
+  display: inline-block;
+  border: 3px solid #00224B;
+  border-radius: 10px;
+  margin: 0.5rem
+  }
+
+  .lbForm {
+    padding: 20px 0rem;
+    font-size: 1.1rem;
+  }
+
+  .lbForm label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .lbForm div{
+    padding: 10px;
+  }
+
+  .body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .lbHeading{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .updateLeadForm div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .updateLeadForm input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm input[type="number"]{
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm select{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+  .updateLeadForm div .tagOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 450px){
+  .lb {
+  display: inline-block;
+  border: 3px solid #00224B;
+  border-radius: 10px;
+  margin: 0.5rem
+  }
+
+  .lbForm {
+    padding: 20px 40px;
+    font-size: 1.1rem;
+  }
+
+  .lbForm label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .lbForm div{
+    padding: 10px;
+  }
+
+  .body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .lbHeading{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .updateLeadForm div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .updateLeadForm input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm input[type="number"]{
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm select{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+  .updateLeadForm div .tagOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 750px){
+  .lbForm{
+    padding: 20px 28px;
+    font-size: 1.1rem;
+  }
+  .lb {
+  border: 3px solid #00224B;
+  border-radius: 10px;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .lbHeading{
+    text-align: center;
+    padding: 1.5rem 0rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+
+/* Agent View */
+
+@media (min-width: 340px){
+  .agentBox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .agentFilterOptions{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+  .agentFilterOptions select{
+    padding: 5px;
+    width: 45%;
+  }
+  .agentSortOptions{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .agentSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .agentViewBtns{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 535px){
+  .agentFilterOptions{
+    display: inline-flex;
+  }
+  .agentFilterOptions select{
+    margin: 0px 12px
+  }
+  .agentSortOptions{
+    display: inline-block;
+  }
+  .agentSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .agentViewBtns{
+    display: flex;
+    flex-direction: row;
+  }
+  .agentViewBtns div{
+    width: 50%;
+    margin: 0rem 1rem
+  }
+}
+
+
+@media (min-width: 765px){
+  .agentBox{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  .agentFilterOptions{
+    display: inline-flex;
+  }
+  .agentFilterOptions select{
+    margin: 0px 12px
+  }
+  .agentSortOptions{
+    display: inline-block;
+  }
+  .agentSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .agentViewBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .agentViewBtns div{
+    width: 80%;
+    margin: 0rem 1rem
+  }
+}
+
+
+@media (min-width: 1250px){
+  .agentViewBtns div{
+    width: 60%;
+  }
+}
+
+/* Status View */
+
+@media (min-width: 340px){
+  .statusBox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .statusFilterOptions{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+  .statusFilterOptions select{
+    padding: 5px;
+    width: 45%;
+  }
+  .statusSortOptions{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .statusSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .statusViewBtns{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 535px){
+  .statusFilterOptions{
+    display: inline-flex;
+  }
+  .statusFilterOptions select{
+    margin: 0px 12px
+  }
+  .statusSortOptions{
+    display: inline-block;
+  }
+  .statusSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .statusViewBtns{
+    display: flex;
+    flex-direction: row;
+  }
+  .statusViewBtns div{
+    width: 50%;
+    margin: 0rem 1rem
+  }
+}
+
+
+@media (min-width: 765px){
+  .statusBox{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  .statusFilterOptions{
+    display: inline-flex;
+  }
+  .statusFilterOptions select{
+    margin: 0px 12px
+  }
+  .statusSortOptions{
+    display: inline-block;
+  }
+  .statusSortOptions select{
+    width: 100%;
+    padding: 5px;
+  }
+  .statusViewBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .statusViewBtns div{
+    width: 80%;
+    margin: 0rem 1rem
+  }
+}
+
+
+@media (min-width: 1250px){
+  .statusViewBtns div{
+    width: 60%;
+  }
+}
+
+/* Agent List */
+
+@media (min-width: 340px){
+  .listBox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1rem;
+  }
+  .agentList{
+    margin: 1rem;
+  }
+  .agentListBtns{
+    margin: 1rem;
+  }
+  .agentListBtns button{
+    width: 100%;
+  }
+  .agentListHeading{
+    text-align: center;
+  }
+}
+
+@media (min-width: 760px){
+  .listBox{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 1rem;
+  }
+  .agentListBtns{
+    display: flex;
+    justify-content: center;
+  }
+  .agentListHeading{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px){
+  .agentListBtns{
+    display: flex;
+    justify-content: center;
+  }
+  .agentListBtns button{
+    width: 60%;
+  }
+  .agentListHeading{
+    text-align: start;
+  }
+}
+
+
+/* New Agent */
+
+@media (min-width: 340px){
+  .newAgentDiv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .addAgentBox div{
+    margin-bottom: 16px;
+  }
+
+  .addAgentBox input[type="text"]{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 425px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+  }
+
+  .addAgentBox input[type="text"]{
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 55%;
+  }
+}
+
+@media (min-width: 535px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 760px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 1020px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+
+@media (min-width: 1070px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1270px){
+  .addAgentBox {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 35%;
+    margin: auto;
+  }
+}
+
+
+/* Report page*/
+@media (min-width: 340px){
+  .allReports{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .reportGraphs{
+    display: flex;
+    justify-content: center;
+  }
+  .reportBtns{
+    display: flex;
+    justify-content: center;
+  }
+  .reportBtns button{
+    width: 80%;
+  }
+}
+
+@media (min-width: 760px){
+  .reportBtns button{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1020px){
+  .allReports{
+    display: flex;
+    flex-direction: row;
+  }
+  .reportBtns{
+    display: flex;
+    align-items: start;
+  }
+  .reportBtns button{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px){
+  .reportBtns button{
+    width: 60%;
+  }
+}
+
+/* Lead Management page*/
+@media (min-width: 340px){
+  .mBox{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mDetails{
+    display: flex;
+    justify-content: center;
+  }
+  .mBtns{
+    display: flex;
+    justify-content: center;
+  }
+  .mBtns button{
+    width: 80%;
+    margin: 2rem;
+  }
+
+  .addComment input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  }
+
+  .addComment select{
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .updateLeadForm div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .updateLeadForm input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm input[type="number"]{
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm select{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+  .updateLeadForm div .tagOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mClosedDiv{
+    margin: 10px 0px;
+  }
+}
+
+@media (min-width: 450px){
+  .mDetailsBlock{
+    margin-left: 2rem;
+  }
+  .mBtns button{
+    width: 60%;
+    margin: 2rem;
+  }
+  .updateLeadForm div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .updateLeadForm input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm input[type="number"]{
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .updateLeadForm select{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+  .updateLeadForm div .tagOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 750px){
+  .mBox{
+    display: flex;
+    flex-direction: row;
+  }
+  .mDetailsBlock{
+    margin-left: 0rem;
+  }
+  .mBtns button{
+    width: 70%;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .mBtns button{
+    width: 50%;
+    margin: 2rem;
+  }
+}
