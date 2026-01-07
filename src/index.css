@@ -237,11 +237,18 @@ h1{
 /* Add New Lead */
 
 @media (min-width: 340px){
+  .body{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .lb {
-  display: inline-block;
+  display: flex;
   border: 3px solid #00224B;
   border-radius: 10px;
-  margin: 0.5rem
+  width: 100%;
+  justify-content: center;
   }
 
   .lbForm {
@@ -258,15 +265,14 @@ h1{
     padding: 10px;
   }
 
-  .body{
+  .lbBtns{
     display: flex;
     justify-content: center;
   }
 
-  .lbHeading{
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
+  .lbBtns button{
+    width: 90%;
+    margin: 2rem 0rem;
   }
 
   .updateLeadForm div{
@@ -323,18 +329,12 @@ h1{
     padding: 10px;
   }
 
-  .body{
-    display: flex;
-    justify-content: center;
+  .lbBtns button{
+    width: 70%;
+    margin: 2rem 0rem;
   }
 
-  .lbHeading{
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
-  }
-
-  .updateLeadForm div{
+    .updateLeadForm div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -368,27 +368,53 @@ h1{
 
 
 @media (min-width: 750px){
+  .body{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 2rem 0rem;
+  }
+
   .lbForm{
     padding: 20px 28px;
     font-size: 1.1rem;
   }
+
+  .lbBtns button{
+    width: 80%;
+    margin: 2rem 0rem;
+  }
+
   .lb {
   border: 3px solid #00224B;
   border-radius: 10px;
-  margin: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   }
-  .lbHeading{
-    text-align: center;
-    padding: 1.5rem 0rem;
-    font-size: 2rem;
-    width: 100%;
-  }
 }
 
 
+@media (min-width: 1024px){
+  .lbBtns button{
+    width: 60%;
+    margin: 2rem 0rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .lbBtns button{
+    width: 50%;
+    margin: 2rem 0rem;
+  }
+  .lb {
+  display: flex;
+  border: 3px solid #00224B;
+  border-radius: 10px;
+  width: 80%;
+  justify-content: center;
+  }
+}
 /* Agent View */
 
 @media (min-width: 340px){
@@ -635,9 +661,24 @@ h1{
 
 
 /* New Agent */
-
 @media (min-width: 340px){
   .newAgentDiv{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 25vh;
+  }
+
+  .newAgentBtn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+  }
+
+  .newAgentBtn button{
+    width: 90%;
+  }
+
+  .agentDetails{
     display: flex;
     justify-content: center;
   }
@@ -675,6 +716,10 @@ h1{
     border-bottom: 1px solid black;
     width: 55%;
   }
+
+  .newAgentBtn button{
+    width: 80%;
+  }
 }
 
 @media (min-width: 535px){
@@ -685,48 +730,88 @@ h1{
     width: 80%;
     margin: auto;
   }
-}
 
-
-@media (min-width: 760px){
-  .addAgentBox {
-    border: 1px solid black;
-    padding: 30px;
-    border-radius: 5px;
+  .newAgentBtn button{
     width: 60%;
-    margin: auto;
   }
 }
 
 
-@media (min-width: 1020px){
+@media (min-width: 760px){
+  .newAgentDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
   .addAgentBox {
     border: 1px solid black;
     padding: 30px;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     margin: auto;
+  }
+
+  .newAgentBtn button{
+    width: 70%;
+  }
+}
+
+@media (min-width: 820px){
+  .agentDetails{
+    margin-left: 3rem;
+  }
+  .newAgentBtn button{
+    width: 75%;
+  }
+}
+
+@media (min-width: 912px){
+  .agentDetails{
+    margin-left: 5rem;
+  }
+  .newAgentBtn button{
+    width: 75%;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1020px){
+  .newAgentBtn button{
+    width: 70%;
   }
 }
 
 
 @media (min-width: 1070px){
+  .newAgentBtn button{
+    width: 50%;
+  }
   .addAgentBox {
     border: 1px solid black;
     padding: 30px;
     border-radius: 5px;
-    width: 40%;
+    width: 125%;
     margin: auto;
+  }
+  .agentDetails{
+    margin-left: 0rem;
+  }
+  .newAgentBtn button{
+    margin-left: 3rem;
+  }
+  .addAgentBox input[type="text"]{
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 65%;
   }
 }
 
 @media (min-width: 1270px){
-  .addAgentBox {
-    border: 1px solid black;
-    padding: 30px;
-    border-radius: 5px;
-    width: 35%;
-    margin: auto;
+  .newAgentBtn button{
+    width: 45%;
   }
 }
 

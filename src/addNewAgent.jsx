@@ -65,17 +65,24 @@ const NewAgent = () => {
             <div className="header">
                 <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>Add New Sales Agent</h1>
             </div>
-            <div className="newAgentDiv" style={{marginTop: "25vh"}}>
-                <div className="col-11">
-                    <form onSubmit={handleCreateAgent} className="addAgentBox fs-5">
-                        <div>
-                            <label>Agent Name : </label> <input type="text" name="name" value={newAgent.name} onChange={handleAgent} required/>
-                        </div>
-                        <div>
-                            <label>Email Address : </label> <input type="text" name="email" value={newAgent.email} onChange={handleAgent} required/>
-                        </div>
-                        <button className="py-2 px-3 btn btn" type="submit" style={{background: "#00224B", color: "#fff"}} onClick={() => isValidEmail(newAgent.email)}>Create Agent</button>
-                    </form>
+            <div className="newAgentDiv">
+                <div className="col-xl-6 col-lg-5 col-md-4 col-12">
+                    <div className="newAgentBtn">
+                        <button  className="py-2 btn btn" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/")}>Go to Dashboard</button>
+                    </div>
+                </div>
+                <div className="agentDetails">
+                    <div className="col-11 col-lg-12 col-md-12">
+                        <form onSubmit={handleCreateAgent} className="addAgentBox fs-5">
+                            <div>
+                                <label>Agent Name : </label> <input type="text" name="name" value={newAgent.name} onChange={handleAgent} required/>
+                            </div>
+                            <div>
+                                <label>Email Address : </label> <input type="text" name="email" value={newAgent.email} onChange={handleAgent} required/>
+                            </div>
+                            <button className="py-2 px-3 btn btn" type="submit" style={{background: "#00224B", color: "#fff"}} onClick={() => isValidEmail(newAgent.email)}>Create Agent</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -79,10 +79,18 @@ const NewLead = () => {
     }
     
     return (
-        <div className="body">
-            <div className="lb col-lg-6 col-xl-4 col-md-7 col-sm-7 col-11">
-                <h3 className="lbHeading mb-0 pb-3" style={{background: "#990F02", color: "#fff"}}>Add New Lead</h3>
-                <hr style={{margin: "0px"}}/>
+        <div>
+            <div className="header">
+                <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>Add New Lead</h1>
+            </div>   
+            <div className="body">
+                <div className="col-xl-5 col-lg-5 col-md-4 col-12">
+                    <div className="lbBtns">
+                        <button  className="py-2 btn btn" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/")}>Go to Dashboard</button>
+                    </div>
+                </div>
+                <div className="col-xl-5 col-lg-6 col-md-7 col-11">
+                <div className="lb">
                 <form type="submit" className="lbForm updateLeadForm" onSubmit={handleSubmit}>
                     <div>
                         <label>Lead Name : </label>
@@ -147,6 +155,8 @@ const NewLead = () => {
                         <button type="submit" className="btn btn px-3 py-2" style={{background: "#00224B", color: "#fff"}}>Create Lead</button>
                     </div>
                 </form>
+                </div>
+            </div>
             </div>
         </div>
     )
