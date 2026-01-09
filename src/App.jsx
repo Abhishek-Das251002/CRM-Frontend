@@ -44,7 +44,7 @@ function App() {
       <div className="row dbLayout my-4">
         <div className="col-lg-4 col-md-4 col-12 mt-lg-5 mt-4 ms-md-5 ms-lg-0 dbLinks">
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/allleads")}>Leads</div>
-          <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/agentView")}>Sales</div>
+          <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/agentList")}>Sales</div>
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/allAgents")}>Agents</div>
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/leadReport")}>Reports</div>
         </div> 

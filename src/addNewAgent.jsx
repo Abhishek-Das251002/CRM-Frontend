@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const NewAgent = () => {
 
@@ -11,6 +12,7 @@ const NewAgent = () => {
 
     const [validEmail, setValidEmail] = useState(true)
 
+    const navigate = useNavigate()
     function isValidEmail(email) {
         if (email.includes(" ")) return setValidEmail(false);
 

@@ -11,7 +11,6 @@ const AgentView = () => {
     const [filterAgent, setFilterAgent] = useState("")
     let navigate = useNavigate()
     
-
     useEffect(() => {
         let filteredData = [...leadData]
 
@@ -45,7 +44,6 @@ const AgentView = () => {
             setFilterName([...filterName, currAgent])
         }
     }
-
 
     return (
         <div>

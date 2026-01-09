@@ -415,9 +415,63 @@ h1{
   justify-content: center;
   }
 }
+
 /* Agent View */
 
 @media (min-width: 340px){
+  .agentViewBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+
+  .agentViewBtns div{
+    width: 90%;
+  }
+}
+
+@media (min-width: 535px){
+  .agentViewBtns div{
+    width: 70%;
+  }
+}
+
+@media (min-width: 765px){
+  .agentViewBtns{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0rem;
+  }
+  .agentViewBtns div{
+    width: 50%;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 1020px){
+  .agentViewBtns{
+    display: flex;
+    flex-direction: column;
+  }
+  .agentViewBtns div{
+    width: 80%;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 1250px){
+  .agentViewBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .agentViewBtns div{
+    width: 60%;
+    margin-bottom: 0rem;
+  }
+}
+/* @media (min-width: 340px){
   .agentBox{
     display: flex;
     flex-direction: column-reverse;
@@ -510,9 +564,10 @@ h1{
     width: 60%;
   }
 }
+*/
 
 /* Status View */
-
+/* 
 @media (min-width: 340px){
   .statusBox{
     display: flex;
@@ -605,7 +660,7 @@ h1{
   .statusViewBtns div{
     width: 60%;
   }
-}
+}  */
 
 /* Agent List */
 

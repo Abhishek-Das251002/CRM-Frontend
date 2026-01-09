@@ -2,6 +2,7 @@ import { useState } from "react";
 import useFetch from "./useFetch";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const NewLead = () => {
     const [newLeadDetails, setNewLeadDetails] = useState({
@@ -15,6 +16,8 @@ const NewLead = () => {
         closedAt: ""
     })
 
+    const navigate = useNavigate()
+    
     const {data} = useFetch("https://crm-backend-azure.vercel.app/agents")   
 
     const handleChange = (e) => {
