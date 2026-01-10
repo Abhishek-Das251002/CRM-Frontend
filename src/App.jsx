@@ -47,6 +47,7 @@ function App() {
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/agentList")}>Sales</div>
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/allAgents")}>Agents</div>
           <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/leadReport")}>Reports</div>
+          <div className="btn btn mt-lg-3 mt-3 fs-5" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/settings")}>Settings</div>
         </div> 
         <div className="col-xl-7 col-md-7 col-12 my-lg-3">
           {currStatus ? <p className="fs-4 fw-medium leadH1">Showing lead with status ({currStatus}) :</p>: <p className="leadH2 fs-4 fw-medium">Showing All leads :</p>}

@@ -1042,12 +1042,54 @@ h1{
 }
 
 
+/*Settings*/
 
+
+@media (min-width: 340px){
+  .settingLayout{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+  }
+
+  .settingBox{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .settingLayout .card-body{
+    padding: 0rem;
+  }
+
+  .settingLayout .list-group{
+    border-radius: 0px;
+  }
+
+  .settingLayout .card{
+    width: 95%;
+  }
+}
+
+@media (min-width: 760px){
+  .settingLayout .card{
+    width: 75%;
+  }
+}
+
+@media (min-width: 1020px){
   .settingLayout{
     display: flex;
     flex-direction: row;
+    margin: 2rem 0rem;
   }
+  .settingLayout .card{
+    width: 85%;
+  }
+}
 
-  .settingLayout ul{
-    width: 50%;
+@media (min-width: 1250px){
+  .settingLayout .card{
+    width: 75%;
   }
+}

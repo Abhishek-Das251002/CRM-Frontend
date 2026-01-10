@@ -49,7 +49,7 @@ const AllAgents = () => {
             <p className="mt-5 fs-5 text-center">Loading Details...</p>
             :
             <div className="row leadListData mb-5">
-                <div className="col-xl-4 col-md-4 col-11 mt-3 agentViewBtns">
+                <div className="col-xl-4 col-lg-4 col-12 agentViewBtns">
                     <div className="btn btn mt-3 py-2" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/")}>Go to Dashboard</div>
                     <div className="btn btn mt-3 py-2" style={{background: "#2E2E2E", color: "#fff"}} onClick={() => navigate("/statusList")}>Show Leads By Status</div>
                 </div>
