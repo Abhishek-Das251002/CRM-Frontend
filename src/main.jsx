@@ -14,6 +14,7 @@ import StatusView from './statusView.jsx'
 import LeadReport from './leadReport.jsx'
 import AllAgents from './agentViewList.jsx'
 import AllStatus from './statusViewList.jsx'
+import Setting from './settings.jsx'
 import { ToastContainer, Bounce } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
   {
     path: "/statusList",
     element: <AllStatus/>
+  },
+  {
+    path: "/settings",
+    element: <Setting/>
   }
 ])
 

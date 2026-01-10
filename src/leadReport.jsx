@@ -41,7 +41,7 @@ const LeadReport = () => {
     const closedLead = agentData.map(agent => (
         {
             label: agent.name,
-            value: leadData.reduce((acc, curr) => curr.salesAgent.name === agent.name && curr.status === "Closed" ? acc = acc + 1 : acc,0)
+            value: leadData.reduce((acc, curr) => curr.salesAgent && curr.salesAgent.name === agent.name && curr.status === "Closed" ? acc = acc + 1 : acc,0)
         }
     ))
     

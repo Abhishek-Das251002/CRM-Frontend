@@ -33,7 +33,7 @@ const ManageLead = () => {
            setNewLeadDetails({
                 name: currLead.name,
                 source: currLead.source,
-                salesAgent: currLead.salesAgent._id,
+                salesAgent: currLead.salesAgent ? currLead.salesAgent._id : "",
                 status: currLead.status,
                 priority: currLead.priority,
                 timeToClose: currLead.timeToClose,
@@ -232,7 +232,7 @@ const ManageLead = () => {
                         :
                         <div className="fs-5 ms-3 mt-3">
                             <p><strong>Lead Name : </strong>{currLead.name}</p>
-                            <p><strong>Sales Agent : </strong>{currLead.salesAgent.name}</p>
+                            <p><strong>Sales Agent : </strong>{currLead.salesAgent? currLead.salesAgent.name: <em className="text-secondary">Agent not assigned, use "Edit Lead Details" button.</em>}</p>
                             <p><strong>Lead Source : </strong>{currLead.source}</p>
                             <p><strong>Lead Status : </strong>{currLead.status}</p>
                             <p><strong>Priority : </strong>{currLead.priority}</p>
@@ -246,10 +246,11 @@ const ManageLead = () => {
                     <hr />
                     <div>
                         <h2 className="my-3">Comment Section :</h2>    
-                        {commentData.length !== 0 
+                        {commentData.length !== 0
                         ?
                         commentData.map(comment => (
                             <div className="card mt-4">
+                            {comment.author &&
                             <div className="card-body">
                                 <figure>
                                 <blockquote className="blockquote">
@@ -269,7 +270,7 @@ const ManageLead = () => {
                                     )}</cite>
                                 </figcaption>
                                 </figure>
-                            </div>
+                            </div>}
                             </div>
                         ))
                         :

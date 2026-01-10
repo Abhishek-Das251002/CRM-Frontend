@@ -1040,3 +1040,14 @@ h1{
     margin: 2rem;
   }
 }
+
+
+
+  .settingLayout{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .settingLayout ul{
+    width: 50%;
+  }

@@ -102,7 +102,7 @@ const AllLeads = () => {
                                     {lead.status}
                                 </div>
                                 <div>
-                                    {lead.salesAgent.name}
+                                    {lead.salesAgent? lead.salesAgent.name : <em className="text-secondary">Agent not assigned</em>}
                                 </div>
                             </div>
                         ))}
