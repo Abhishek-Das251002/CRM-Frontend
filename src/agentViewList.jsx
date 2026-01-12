@@ -17,7 +17,7 @@ const AllAgents = () => {
     useEffect(() => {
         let filteredData = [...leadData]
         if(filters.agent){
-            filteredData = filteredData.filter(lead => lead.salesAgent.name === filters.agent)
+            filteredData = filteredData.filter(lead =>  lead.salesAgent && lead.salesAgent.name === filters.agent)
         }
         if(filters.priority){
             filteredData = filteredData.filter(lead => lead.priority === filters.priority)

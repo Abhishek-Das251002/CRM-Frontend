@@ -16,8 +16,8 @@ const AllStatus = () => {
 
     useEffect(() => {
         let filteredData = [...leadData]
-        if(filters.agent){
-            filteredData = filteredData.filter(lead => lead.salesAgent.name === filters.agent)
+        if(filters.status){
+            filteredData = filteredData.filter(lead => lead.status === filters.status)
         }
         if(filters.priority){
             filteredData = filteredData.filter(lead => lead.priority === filters.priority)
@@ -83,12 +83,13 @@ const AllStatus = () => {
                     <div className="mt-5 mb-3 filters">
                         <span className="fs-4 filterHeading">Filters: </span>
                         <div className="filterOptions">
-                            <select name="agent" value={filters.agent} onChange={applyFilter}>
-                                <option value="">Sales Agent</option>
-                                {agentData.map(agent => (
-                                    <option value={agent.name}>{agent.name}</option>    
-                                ))            
-                                }
+                            <select name="status"  value={filters.status} onChange={applyFilter}>
+                                <option value="">Lead Status</option>
+                                <option value="New">New</option>
+                                <option value="Contacted">Contacted</option>
+                                <option value="Qualified">Qualified</option>
+                                <option value="Proposal Sent">Proposal Sent</option>
+                                <option value="Closed">Closed</option>
                             </select>
                             <select name="priority" value={filters.priority} onChange={applyFilter}>
                                 <option value="">Set Priority</option>  

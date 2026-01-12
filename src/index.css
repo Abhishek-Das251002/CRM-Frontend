@@ -1048,7 +1048,7 @@ h1{
 @media (min-width: 340px){
   .settingLayout{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 2rem 0rem;
   }
 
@@ -1069,11 +1069,29 @@ h1{
   .settingLayout .card{
     width: 95%;
   }
+
+  .settingBtns{
+    display: flex;
+    justify-content: center;
+  }
+
+  .settingBtns button{
+    width: 90%;
+  }
+}
+
+@media (min-width: 535px){
+  .settingBtns button{
+    width: 75%;
+  }
 }
 
 @media (min-width: 760px){
   .settingLayout .card{
     width: 75%;
+  }
+  .settingBtns button{
+    width: 60%;
   }
 }
 
@@ -1084,12 +1102,15 @@ h1{
     margin: 2rem 0rem;
   }
   .settingLayout .card{
-    width: 85%;
+    width: 100%;
+  }
+  .settingBtns button{
+    width: 75%;
   }
 }
 
 @media (min-width: 1250px){
-  .settingLayout .card{
-    width: 75%;
+  .settingBtns button{
+    width: 65%;
   }
 }
