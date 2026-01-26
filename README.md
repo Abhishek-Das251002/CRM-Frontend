@@ -19,14 +19,13 @@ npm run dev
 ---
 ## Technologies
 **Frontend**
-
--React.js
--Vite
--React Router
--Axios
--Chart.js
--JavaScript (ES6+)
--HTML5
+-React.js<br>
+-Vite<br>
+-React Router<br>
+-Axios<br>
+-Chart.js<br>
+-JavaScript (ES6+)<br>
+-HTML5<br>
 -CSS3
 
 **Backend**
