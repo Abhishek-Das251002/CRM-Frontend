@@ -1,11 +1,11 @@
 # SalesTrack CRM
-A full-stack CRM application built using React, Node.js, and MongoDB to manage sales leads, agents and provides filtering, and sorting features.
+A full-stack CRM application built using React, Node.js, and MongoDB to manage sales leads, agents and provides filtering, and sorting features.<br>
 It includes interactive dashboards, lead lifecycle management, agent-wise performance tracking, and analytical reports for closed and in-pipeline leads.
 
 ---
 ## Demo Link
 
-[Live Demo] ()
+[Live Demo]()
 
 ---
 ## Quick Start
@@ -18,7 +18,8 @@ npm run dev
 ```
 ---
 ## Technologies
-***Frontend***
+**Frontend**
+
 -React.js
 -Vite
 -React Router
@@ -28,13 +29,15 @@ npm run dev
 -HTML5
 -CSS3
 
-***Backend***
+**Backend**
+
 -Node.js
 -Express.js
 -Mongoose
 -RESTful APIs
 
-***Database***
+**Database**
+
 -MongoDB
 
 ---
@@ -44,7 +47,8 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 ---
 ## Features
 
-***Dashboard***
+**Dashboard**
+
 -Overview of leads with quick navigation
 -Lead list with basic filtering options
 -Add new leads to the system
