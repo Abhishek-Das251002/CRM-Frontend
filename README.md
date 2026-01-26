@@ -19,25 +19,25 @@ npm run dev
 ---
 ## Technologies
 **Frontend**
--React.js<br>
--Vite<br>
--React Router<br>
--Axios<br>
--Chart.js<br>
--JavaScript (ES6+)<br>
--HTML5<br>
--CSS3
+- React.js
+- Vite
+- React Router
+- Axios
+- Chart.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
 **Backend**
 
--Node.js
--Express.js
--Mongoose
--RESTful APIs
+- Node.js
+- Express.js
+- Mongoose
+- RESTful APIs
 
 **Database**
 
--MongoDB
+- MongoDB
 
 ---
 ## Demo Video
@@ -48,39 +48,39 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 
 **Dashboard**
 
--Overview of leads with quick navigation
--Lead list with basic filtering options
--Add new leads to the system
+- Overview of leads with quick navigation
+- Lead list with basic filtering options
+- Add new leads to the system
 
-***Lead Management***
+**Lead Management**
 
--View detailed lead information
--Edit lead details and add comments
+- View detailed lead information
+- Edit lead details and add comments
 
-***Leads List***
+**Leads List**
 
--View all leads with filtering and sorting
--Filter leads by sales agent and lead status
+- View all leads with filtering and sorting
+- Filter leads by sales agent and lead status
 
-***Sales Agents***
+**Sales Agents**
 
--View list of sales agents with email details
--Add new sales agents
+- View list of sales agents with email details
+- Add new sales agents
 
-***Reports & Analytics***
+**Reports & Analytics**
 
--Track closed and in-pipeline leads
--Agent-wise lead closure reports
--Lead status distribution using visual charts
+- Track closed and in-pipeline leads
+- Agent-wise lead closure reports
+- Lead status distribution using visual charts
 
-***Settings***
+**Settings**
 
--Manage leads and agent leads
--Delete leads and agents when required
+- Manage leads and agent leads
+- Delete leads and agents when required
 
 ---
 ## API Reference
-### ***GET /api/leads***
+### **GET /api/leads**
 
 List all Leads
 Sample Response:
@@ -88,7 +88,7 @@ Sample Response:
 [{_id, name, source, salesAgent, ....}, ....]
 ```
 
-### ***POST /api/leads/:id***
+### **POST /api/leads/:id**
 
 Update a lead
 Sample Response: 
@@ -96,7 +96,7 @@ Sample Response:
 {_id, name, source, salesAgent, ...}
 ```
 
-### ***POST /api/leads***
+### **POST /api/leads**
 
 Create a new leads
 Sample Response:
@@ -104,20 +104,20 @@ Sample Response:
 {_id, name, source, salesAgent, ...}
 ```
 
-### ***DELETE/api/leads/:id***
+### **DELETE/api/leads/:id**
 
 Delete a lead
 ```
 {_id, name, source, salesAgent, ...}
 ```
-### ***GET /api/agents***
+### **GET /api/agents**
 
 List all agents
 Sample Response:
 ```
 [{_id, name, email, createdAt}, ...]
 ```
-### ***POST /api/agents***
+### **POST /api/agents**
 
 Create a new leads
 Sample Response:
@@ -125,7 +125,7 @@ Sample Response:
 {_id, name, email, createdAt}
 ```
 
-### ***DELETE /api/agents/:id***
+### **DELETE /api/agents/:id**
 
 Delete an agent
 Sample Response:
@@ -133,7 +133,7 @@ Sample Response:
 {_id, name, email, createdAt}
 ```
 
-### ***POST /api/leads/:id/comments***
+### **POST /api/leads/:id/comments**
 
 To create a new comment on a specific lead
 Sample Response:
@@ -141,7 +141,7 @@ Sample Response:
 {_id, lead, author, commentText,...}
 ```
 
-### ***GET/api/leads/:id/comments***
+### **GET/api/leads/:id/comments**
 
 List all comments for a specific lead
 Sample Response:
@@ -149,7 +149,7 @@ Sample Response:
 [{_id, lead, author, commentText,...}, ...]
 ```
 
-### ***GET/api/report/last-week***
+### **GET/api/report/last-week**
 
 To get leads closed last week
 Sample Response:
@@ -157,7 +157,7 @@ Sample Response:
 [{id, name, salesAgent, closedAt}, ...]
 ```
 
-### ***GET/api/report/pipeline***
+### **GET/api/report/pipeline**
 
 Give total leads currently in pipeline
 Sample Response:
