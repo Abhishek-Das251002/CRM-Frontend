@@ -77,5 +77,104 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 
 ---
 ## API Reference
-### ***GET /api/recipes***
+### ***GET /api/leads***
+
+List all Leads
+Sample Response:
+```
+[{_id, name, source, salesAgent, ....}, ....]
+```
+
+### ***POST /api/leads/:id***
+
+Update a lead
+Sample Response: 
+```
+{_id, name, source, salesAgent, ...}
+```
+
+### ***POST /api/leads***
+
+Create a new leads
+Sample Response:
+```
+{_id, name, source, salesAgent, ...}
+```
+
+### ***DELETE/api/leads/:id***
+
+Delete a lead
+```
+{_id, name, source, salesAgent, ...}
+```
+### ***GET /api/agents***
+
+List all agents
+Sample Response:
+```
+[{_id, name, email, createdAt}, ...]
+```
+### ***POST /api/agents***
+
+Create a new leads
+Sample Response:
+```
+{_id, name, email, createdAt}
+```
+
+### ***DELETE /api/agents/:id***
+
+Delete an agent
+Sample Response:
+```
+{_id, name, email, createdAt}
+```
+
+### ***POST /api/leads/:id/comments***
+
+To create a new comment on a specific lead
+Sample Response:
+```
+{_id, lead, author, commentText,...}
+```
+
+### ***GET/api/leads/:id/comments***
+
+List all comments for a specific lead
+Sample Response:
+```
+[{_id, lead, author, commentText,...}, ...]
+```
+
+### ***GET/api/report/last-week***
+
+To get leads closed last week
+Sample Response:
+```
+[{id, name, salesAgent, closedAt}, ...]
+```
+
+### ***GET/api/report/pipeline***
+
+Give total leads currently in pipeline
+Sample Response:
+```
+{totalLeadsInPipeline}
+```
+
+---
+
+## Contact
+For bugs or feature requests, please reach out to abhishekgautam1966@gmail.com
+
+
+
+
+
+
+
+
+
+
+
 
