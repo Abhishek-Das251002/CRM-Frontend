@@ -10,8 +10,8 @@ It includes interactive dashboards, lead lifecycle management, agent-wise perfor
 ---
 ## Quick Start
 ```
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Abhishek-Das251002/CRM-Frontend.git
+cd CRM-Frontend
 npm install
 npm run dev
 
