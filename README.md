@@ -1,16 +1,81 @@
-# React + Vite
+# SalesTrack CRM
+A full-stack CRM application built using React, Node.js, and MongoDB to manage sales leads, agents and provides filtering, and sorting features.
+It includes interactive dashboards, lead lifecycle management, agent-wise performance tracking, and analytical reports for closed and in-pipeline leads.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+## Demo Link
 
-Currently, two official plugins are available:
+[Live Demo] ()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## Quick Start
+```
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+npm install
+npm run dev
 
-## React Compiler
+```
+---
+## Technologies
+***Frontend***
+-React.js
+-Vite
+-React Router
+-Axios
+-Chart.js
+-JavaScript (ES6+)
+-HTML5
+-CSS3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+***Backend***
+-Node.js
+-Express.js
+-Mongoose
+-RESTful APIs
 
-## Expanding the ESLint configuration
+***Database***
+-MongoDB
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## Demo Video
+Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Link]()
+
+---
+## Features
+
+***Dashboard***
+-Overview of leads with quick navigation
+-Lead list with basic filtering options
+-Add new leads to the system
+
+***Lead Management***
+
+-View detailed lead information
+-Edit lead details and add comments
+
+***Leads List***
+
+-View all leads with filtering and sorting
+-Filter leads by sales agent and lead status
+
+***Sales Agents***
+
+-View list of sales agents with email details
+-Add new sales agents
+
+***Reports & Analytics***
+
+-Track closed and in-pipeline leads
+-Agent-wise lead closure reports
+-Lead status distribution using visual charts
+
+***Settings***
+
+-Manage leads and agent leads
+-Delete leads and agents when required
+
+---
+## API Reference
+### ***GET /api/recipes***
+
