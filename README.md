@@ -5,7 +5,7 @@ It includes interactive dashboards, lead lifecycle management, agent-wise perfor
 ---
 ## Demo Link
 
-[Live Demo]()
+[Live Demo](https://crm-frontend-brown-five.vercel.app/)
 
 ---
 ## Quick Start
