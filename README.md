@@ -22,8 +22,7 @@ Create a .env file in the backend root directory and add the following environme
 
 ```
 PORT = 3000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key 
+MONGODB_URI=your_mongodb_atlas_connection_string
 ```
 
 ---
