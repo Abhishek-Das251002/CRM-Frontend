@@ -18,7 +18,7 @@ npm run dev
 ```
 ---
 ## Environment Setup
-Create a .env file in the backend root directory and add the following environment variables:
+Create a ```.env``` file in the backend root directory and add the following environment variables:
 
 ```
 PORT = 3000
