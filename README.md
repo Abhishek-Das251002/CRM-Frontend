@@ -17,6 +17,16 @@ npm run dev
 
 ```
 ---
+## Environment Setup
+Create a .env file in the backend root directory and add the following environment variables:
+
+```
+PORT = 3000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key 
+```
+
+---
 ## Technologies
 **Frontend**
 - React.js
