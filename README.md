@@ -48,34 +48,31 @@ Watch a walkthrough (5–7 minutes) of all major features of this app: [Video Li
 
 **Dashboard**
 
-- Overview of leads with quick navigation
-- Lead list with basic filtering options
+- View a centralized overview of leads with quick navigation
+- Access lead lists with basic filtering options
 - Add new leads to the system
 
 **Lead Management**
 
-- View detailed lead information
-- Edit lead details and add comments
+- View detailed lead profiles
+- Update lead details and add internal comments
 
-**Leads List**
+**Leads & Agents**
 
-- View all leads with filtering and sorting
+- View and manage all leads with filtering and sorting
 - Filter leads by sales agent and lead status
-
-**Sales Agents**
-
-- View list of sales agents with email details
+- View sales agents with contact details
 - Add new sales agents
 
 **Reports & Analytics**
 
-- Track closed and in-pipeline leads
-- Agent-wise lead closure reports
-- Lead status distribution using visual charts
+- Monitor closed and in-pipeline leads
+- Analyze agent-wise lead closure performance
+- Visualize lead status distribution using charts
 
 **Settings**
 
-- Manage leads and agent leads
+- Manage leads and agent assignments
 - Delete leads and agents when required
 
 ---
