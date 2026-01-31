@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <div className="header">
-        <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>Anvaya CRM Dashboard</h1>
+        <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>SalesTrack CRM Dashboard</h1>
       </div>
       {loading
       ?

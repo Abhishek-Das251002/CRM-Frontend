@@ -48,7 +48,7 @@ const LeadReport = () => {
     return (
         <div>
             <div className="header">
-                <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>Anvaya CRM Reports</h1>
+                <h1 className="text-center p-3" style={{background: "#990F02", color: "#ffffff"}}>SalesTrack CRM Reports</h1>
             </div>
             {leadLoading && agentLoading && pipelineLoading
             ?
